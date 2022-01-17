@@ -1,0 +1,146 @@
+:root{
+    --background-colorMain:rgb(234,235,236);
+    --textNbutton:rgb(74,74,74,255);
+}
+body{
+    color:var(--textNbutton);
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.navList{
+    display:flex;
+ justify-content:end;
+}
+header{
+    background-color: rgb(216,216,216);
+    display:flex;
+    justify-content: center;
+}
+.banner{
+    width: 80%;
+    background-color:blue;
+    margin: 24px 32px;
+    
+
+}
+.bannerInfo{
+   
+    margin-right: 10%;
+    display:flex;
+    flex-direction: column;
+    align-items: space-around;
+    color:var(--textNbutton);
+    
+}
+.button{
+    background-color:var(--textNbutton);
+    color:white;
+    padding: 8px ;
+    text-align: center;
+   
+}
+
+.schoolInfo{
+  
+ display:grid;
+grid-template-rows: repeat(3 , 1fr);
+grid-template-columns: 65% 40%;
+row-gap: 5px;
+column-gap: 3px;;
+}
+.focusPhoto{
+    width:100%;
+}
+.infoItem{
+    display:flex;
+}
+.schoolInfo-1{
+    grid-row:1 / span 3;
+    margin: 32px 24px;
+    
+}
+.detailPhoto{
+    width:35%;
+    height:fit-content;
+    
+    
+}
+.importantInfo{
+    
+  margin-right:13%;
+}
+
+
+.infoContents{
+ display:flex;
+ flex-direction:column;
+ position: relative;
+ 
+}
+
+.practiceQuote{
+    margin-bottom:24px;
+}
+.infoItem h5{
+
+align-self:flex-end;
+}
+
+.startLearning{
+    text-align: center;
+    padding: 32px;
+}
+.learn{
+    background-color: var(--background-colorMain);
+   
+   
+}
+.options{
+   
+    display:grid;
+    
+    grid-template:repeat(2, 2fr) / repeat(3, 1fr);
+    
+    gap: 32px 32px;
+    margin:32px 72px ;
+    
+  
+}
+.summary{
+    margin-left: 16px;
+}
+
+.item{
+    background-color: #fff;
+    display:block;
+    border-color:blue;
+
+    
+}
+
+.item img{
+    height:auto;
+    width: 100%;
+    margin-bottom:16px;
+}
+.item p{
+    margin-bottom: 24px;
+}
+.mediaInfo{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(4, 30%);
+    grid-gap: 24px;
+
+}
+.box{
+background-color: brown;
+}
+
+
