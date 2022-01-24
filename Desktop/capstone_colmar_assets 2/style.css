@@ -1,6 +1,8 @@
 :root{
     --background-colorMain:rgb(234,235,236);
+    --background-colorHeader:rgb(216, 216, 216);
     --textNbutton:rgb(74,74,74,255);
+    
 }
 body{
     color:var(--textNbutton);
@@ -17,7 +19,7 @@ nav{
  justify-content:end;
 }
 header{
-    background-color: rgb(216,216,216);
+    background-color:var( --background-colorHeader);
     display:flex;
     justify-content: center;
 }
@@ -61,43 +63,55 @@ column-gap: 3px;;
 }
 .schoolInfo-1{
     grid-row:1 / span 3;
-    margin: 32px 24px;
+    padding:24px;
+    border-right: solid ;
+    display:flex;
+    flex-direction:column;
+    border-right: solid var(--background-colorMain);
+    
     
 }
 .detailPhoto{
     width:35%;
     height:fit-content;
+    padding:1em;
     
     
 }
 .importantInfo{
     
   margin-right:13%;
+  border-bottom: solid var( --background-colorMain);
+
+}
+.importantInfo a{
+    color:blue;
 }
 
 
-.infoContents{
- display:flex;
- flex-direction:column;
- position: relative;
- 
+.schoolInfo-4 {
+    background-color: var(--background-colorHeader);
 }
+
+
 
 .practiceQuote{
     margin-bottom:24px;
 }
 .infoItem h5{
-
-align-self:flex-end;
+display:flex;
+align-self: end;
 }
+
+/* start learning section*/
 
 .startLearning{
     text-align: center;
-    padding: 32px;
+    
 }
 .learn{
     background-color: var(--background-colorMain);
-   
+    padding: 32px;
    
 }
 .options{
@@ -131,16 +145,88 @@ align-self:flex-end;
 .item p{
     margin-bottom: 24px;
 }
+
+/* thesis exhibit*/
+
 .mediaInfo{
     background-color: white;
     display:grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: repeat(4, 30%);
+    grid-template-rows: 1fr repeat(3, 1fr );
     grid-gap: 24px;
+    margin: 8px auto;
+    
 
+}
+
+
+
+
+.thesis{
+    grid-area: 1 /  1 /  span 1 /span 2;
+    align-self: center;
+    justify-self: center;
+}
+.a{
+    grid-area: 2 / 1 / span 2 / 1;
+    flex-direction: column;
+    
+}
+
+video{
+    width:100%;
+   
+}
+.b{
+}
+
+.c{
+   grid-area: 2 / 2 / span 1/ span 1;
+   background-color: var(--background-colorMain);
+   
+
+}
+.d{
+    grid-area: 3 / 2 / span 1/ span 1;
+
+}
+source{
+    width:60%;
 }
 .box{
-background-color: brown;
+    display:flex;
+    flex-direction: row;
+    
+    
+    }
+
+.box img{
+width: 35%;
+margin: 16px;
+
+
+}
+/* footer information */
+footer{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    border-top: solid var(--background-colorMain);
+  
+}
+.copy{
+    grid-area: 
 }
 
+.safety{
+    display:flex;
+    justify-self: end;
+  
 
+  
+    
+   
+}
+ 
