@@ -88,6 +88,7 @@ header{
     text-align: center;
    
 }
+/* next section*/
 
 .schoolInfo{
   
@@ -274,20 +275,24 @@ footer{
    /* navigation */
     nav{
        grid-template-columns: 1fr;
-      
-       display:flex;
-       justify-content: space-around;
-   }
-   .companyTitle{
        
-       /*must check later*/
+    
+       
+       
    }
-    a.text {
+  
+   a.text{
         display: none;
     }
     span.text{
         display:none;
 
+    }
+
+    .navLinks{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
     }
 
     /* header info */
@@ -325,13 +330,15 @@ footer{
     .detailPhoto{
         display:none;
     }
-    .mobile{
-        
-    }
+   
     .schoolInfo{
         grid-template-columns: 1fr;
+        
+    }
+    .infoItem{
         flex-direction: column;
     }
+   
 
     .schoolInfo-4{
         background-color: white;
@@ -363,6 +370,21 @@ footer{
     .item-6{
         grid-area: 6 / 1 / span 1 /span 1;
     }  
+/* thesis component*/
+.a{
+    justify-self: center;
+}
+.mediaInfo{
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr repeat(2, 1fr);
+}
+
+/* footer*/
+.footerInfo{
+    grid-template-columns: 1fr;
+    
+}
+
 
 
 }
@@ -377,30 +399,14 @@ footer{
         display:none;
     }
 }
-@media  (max-width: 1000px){
-    .options{ 
-        grid-template-rows:repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .item-1{
-        grid-area: 1 / 1 / span 1 /span 1;
-    }
-    .item-2{
-        grid-area: 1 / 2 / span 1 /span 1;
-    }
-    .item-3{
-        grid-area: 2 / 1 / span 1 /span 1;
-    }
-    .item-4{
-        grid-area: 2 / 2 / span 1 /span 1;
-    }
-    .item-5{
-        grid-area: 3 / 1 / span 1 /span 1;
-    }
-    .item-6{
-        grid-area: 3 / 2 / span 1 /span 1;
-    }  
 
+/* video component of thesis*/
+.videoInfo ,.b, .c{
+    display:none;
+}
+/*footeer content*/
+.safety{
+    display: none;
 }
 
 
