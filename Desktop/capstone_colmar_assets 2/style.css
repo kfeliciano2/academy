@@ -5,8 +5,65 @@
     
 }
 body{
-    color:var(--textNbutton);
+    margin:0;
 }
+
+
+
+/* navigtion */
+
+
+nav{
+    
+    
+    height: 4em;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+
+.companyTitle{
+    height:2em;
+    align-self: center;
+    display: flex;
+    flex-direction:row;
+    
+}
+    nav img{
+        height:2em;
+    }
+    .logo{
+        
+        align-self: center;
+        text-transform: uppercase;
+    }
+    .colmar{
+        color: var(--background-colorHeader);
+    }
+    .academy{
+        color:var(--background-colorMain);
+    }
+
+    .navLinks{
+        display: flex;
+    flex-direction:row;
+    justify-content: end;
+   
+    gap: 1em;
+    align-self:center;
+    }
+
+    
+    
+
+/* header content*/
+header{
+    background-color: rgb(216,216,216);
+    display:flex;
+    justify-content: center;
+}
+
 
 .banner{
     width: 80%;
@@ -65,13 +122,11 @@ column-gap: 3px;;
 }
 .importantInfo{
     
-  margin-right:13%;
+  
   border-bottom: solid var( --background-colorMain);
 
 }
-.importantInfo a{
-    color:blue;
-}
+
 
 
 .schoolInfo-4 {
@@ -213,4 +268,141 @@ footer{
     display:flex;
     justify-self: end;
 }
+
+@media (max-width: 799px) {
+    /*applied if browser window width is less than or equal to 600px*/
+   /* navigation */
+    nav{
+       grid-template-columns: 1fr;
+      
+       display:flex;
+       justify-content: space-around;
+   }
+   .companyTitle{
+       
+       /*must check later*/
+   }
+    a.text {
+        display: none;
+    }
+    span.text{
+        display:none;
+
+    }
+
+    /* header info */
+
+    header{
+        flex-direction:column;
+        margin:0;
+    }
+
+    .banner{
+        width:100%;
+        margin:0;
+    }
+    .bannerInfo{
+        margin:0;
+        padding: 2em 1em;
+    }
+    .button{
+        background-color: 	rgb(155, 155, 155);
+        margin-top: 1.5em;
+        margin-bottom:2em;
+    }
+
+    /* campus info*/
+    .school-info{
+        margin:1em;
+        
+
+        
+    }
+    .schoolInfo-1{
+        display:none;
+
+    }
+    .detailPhoto{
+        display:none;
+    }
+    .mobile{
+        
+    }
+    .schoolInfo{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .schoolInfo-4{
+        background-color: white;
+    }
+
+    /* start learning details */
+    .options{ 
+        grid-template-rows:repeat(6, 1fr);
+        grid-template-columns:  1fr;
+    }
+    .remove{
+        display:none;
+    }
+    .item-1{
+        grid-area: 1 / 1 / span 1 /span 1;
+    }
+    .item-2{
+        grid-area: 2 / 1 / span 1 /span 1;
+    }
+    .item-3{
+        grid-area: 3 / 1 / span 1 /span 1;
+    }
+    .item-4{
+        grid-area: 4 / 1 / span 1 /span 1;
+    }
+    .item-5{
+        grid-area: 5 / 1 / span 1 /span 1;
+    }
+    .item-6{
+        grid-area: 6 / 1 / span 1 /span 1;
+    }  
+
+
+}
+
+@media (min-width: 801px) {
+    /*applied if browser window width is greater than 600px*/
+    a.icon {
+        display: none;
+        
+    }
+    .mobile{
+        display:none;
+    }
+}
+@media  (max-width: 1000px){
+    .options{ 
+        grid-template-rows:repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item-1{
+        grid-area: 1 / 1 / span 1 /span 1;
+    }
+    .item-2{
+        grid-area: 1 / 2 / span 1 /span 1;
+    }
+    .item-3{
+        grid-area: 2 / 1 / span 1 /span 1;
+    }
+    .item-4{
+        grid-area: 2 / 2 / span 1 /span 1;
+    }
+    .item-5{
+        grid-area: 3 / 1 / span 1 /span 1;
+    }
+    .item-6{
+        grid-area: 3 / 2 / span 1 /span 1;
+    }  
+
+}
+
+
+
 
